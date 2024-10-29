@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIST Computer Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="BIST Computer Club - A community for tech enthusiasts exploring the latest advancements in computer science and technology.">
+    <meta name="theme-color" content="#0C0C1D">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="BIST Computer Club Logo">
+                </a>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
+
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#">Events</a>
+                <a href="#">Panel</a>
+                <a href="#">Publications</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+                <div class="mobile-auth-buttons">
+                    <button class="login-btn">Login</button>
+                    <button class="register-btn">Register</button>
+                </div>
+            </div>
+
+            <div class="auth-buttons desktop-only">
+                <button class="login-btn">Login</button>
+                <button class="register-btn">Register</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero">
+            <h1>BIST IT Club</h1>
+            <p>A community for tech enthusiasts from BIST,<br/> where we explore the latest advancements in computer science and technology.</p>
+            <div class="cta-buttons">
+                <button class="join-btn" id="hero-join-btn"><span>Join Now</span></button>
+                <button class="contact-btn" id="contact-btn">Contact Us</button>
+            </div>
+        </header>
+
+        <section class="features">
+            <h2>Our Activities</h2>
+            <div class="feature-container">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Hackathon</h3>
+                    <p>Participate in exciting coding challenges and build innovative projects.</p>
+                    <a href="#" class="feature-link"><span>Learn More</span></a>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Workshop</h3>
+                    <p>Learn new technologies and skills from industry experts.</p>
+                    <a href="#" class="feature-link">Learn More</a>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Programming Competition</h3>
+                    <p>Test your skills against fellow programmers and win amazing prizes.</p>
+                    <a href="#" class="feature-link">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="events">
+            <h2>Events</h2>
+            <div class="event-cards"></div>
+        </section>
+
+        <section class="join-cta">
+            <div class="cta-content">
+                <h2>Join the Most Exciting Tech Community</h2>
+                <p>Be part of a vibrant community that fosters innovation, learning, and growth in the world of technology.</p>
+                <button class="join-btn" id="cta-join-btn">Join Us</button>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Current Panel</h2>
+            <div class="panel-members"></div>
+        </section>
+
+        <section class="departments">
+            <h2>Departments of BISTCC</h2>
+            <div class="department-container">
+                <div class="department-nav">
+                    <button class="department-tab active" data-department="communications">Communications and Marketing</button>
+                    <button class="department-tab" data-department="events">Event Management</button>
+                    <button class="department-tab" data-department="finance">Finance</button>
+                    <button class="department-tab" data-department="research">Research and Development</button>
+                </div>
+                <div class="department-content">
+                    <div class="department-info active" id="communications">
+                        <h3>Communications and Marketing</h3>
+                        <p>Our Communications and Marketing team is responsible for promoting BISTCC events, managing social media presence, and creating engaging content for our members.</p>
+                    </div>
+                    <div class="department-info" id="events">
+                        <h3>Event Management</h3>
+                        <p>The Event Management team plans and executes all BISTCC events, ensuring smooth operations and memorable experiences for participants.</p>
+                    </div>
+                    <div class="department-info" id="finance">
+                        <h3>Finance</h3>
+                        <p>Our Finance department manages the club's budget, handles fundraising initiatives, and ensures financial transparency in all our operations.</p>
+                    </div>
+                    <div class="department-info" id="research">
+                        <h3>Research and Development</h3>
+                        <p>The R&D team focuses on exploring cutting-edge technologies, conducting workshops, and fostering innovation within the BISTCC community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>BIST CC</h3>
+                    <p>Innovating today for a brighter tomorrow.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>Quick Links</h4>
+                        <a href="#">Home</a>
+                        <a href="#">Events</a>
+                        <a href="#">Panel</a>
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>Resources</h4>
+                        <a href="#">Blog</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                    <div class="link-column">
+                        <h4>Legal</h4>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2024 BIST Computer Club All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
