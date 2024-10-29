@@ -44,9 +44,17 @@ body {
 }
 
 /* Grid variations */
-.grid-2 { grid-template-columns: repeat(2, 1fr); }
-.grid-3 { grid-template-columns: repeat(3, 1fr); }
-.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
 
 /* ==========================================================================
    3. Navigation
@@ -71,7 +79,6 @@ body {
     padding: 0 1.5rem;
     max-width: 1400px;
     margin: 0 auto;
-    position: relative;
 }
 
 .logo {
@@ -158,7 +165,7 @@ body {
     display: none;
 }
 
-.nav-container > * {
+.nav-container>* {
     flex-shrink: 0;
 }
 
@@ -236,8 +243,14 @@ body {
         flex-direction: column;
         justify-content: center;
         margin-left: auto;
-        position: relative;
-        top: 0;
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(-50%);
+    }
+
+    #mobile-menu {
+        bottom: 50%;
+        transform: translateY(-50%);
     }
 
     .nav-container {
@@ -980,6 +993,7 @@ footer {
 }
 
 @media (max-width: 1440px) {
+
     .container,
     .nav-container {
         padding: 0 2rem;
@@ -987,6 +1001,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+
     .container,
     .nav-container {
         padding: 0.5rem 1rem;
@@ -1871,7 +1886,7 @@ select:focus {
     }
 
     .logo img {
-        width: 140px; 
+        width: 140px;
     }
 
     .nav-container {
@@ -1892,7 +1907,7 @@ select:focus {
 
 @media (min-width: 1440px) {
     .logo img {
-        width: 250px; 
+        width: 250px;
     }
 }
 
@@ -1905,12 +1920,12 @@ select:focus {
 }
 
 .hero {
-    padding-top: calc(140px + 8rem); 
+    padding-top: calc(140px + 8rem);
 }
 
 @media (max-width: 768px) {
     .hero {
-        padding-top: calc(85px + 4rem); 
+        padding-top: calc(85px + 4rem);
     }
 }
 
@@ -1932,6 +1947,3 @@ select:focus {
 @media (min-width: 1440px) {
     /* Desktop styles */
 }
-
-
-
